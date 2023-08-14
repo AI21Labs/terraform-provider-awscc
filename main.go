@@ -18,7 +18,7 @@ func main() {
 	flag.Parse()
 
 	providerserver.Serve(context.Background(), provider.New, providerserver.ServeOpts{
-		Address: "registry.terraform.io/hashicorp/awscc",
+		Address: "registry.terraform.io/AI21Labs/awscc",
 		Debug:   debugMode,
 	})
 }
