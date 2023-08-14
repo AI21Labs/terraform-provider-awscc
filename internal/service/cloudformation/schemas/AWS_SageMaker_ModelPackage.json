@@ -618,8 +618,6 @@
           "items": {
             "$ref": "#/definitions/ValidationProfile"
           },
-          "minItems": 0,
-          "maxItems": 1,
           "insertionOrder": true
         },
         "ValidationRole": {

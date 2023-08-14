@@ -3385,8 +3385,6 @@ func modelPackageResource(ctx context.Context) (resource.Resource, error) {
 		//	        ],
 		//	        "type": "object"
 		//	      },
-		//	      "maxItems": 1,
-		//	      "minItems": 0,
 		//	      "type": "array"
 		//	    },
 		//	    "ValidationRole": {
@@ -3656,9 +3654,6 @@ func modelPackageResource(ctx context.Context) (resource.Resource, error) {
 						}, /*END SCHEMA*/
 					}, /*END NESTED OBJECT*/
 					Required: true,
-					Validators: []validator.List{ /*START VALIDATORS*/
-						listvalidator.SizeBetween(0, 1),
-					}, /*END VALIDATORS*/
 				}, /*END ATTRIBUTE*/
 				// Property: ValidationRole
 				"validation_role": schema.StringAttribute{ /*START ATTRIBUTE*/
